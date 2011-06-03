@@ -1,10 +1,13 @@
 Tolk is a Rails 3 engine designed to facilitate the translators doing the dirty work of translating your application to other languages.
+With a few updates from yabo-concept, to allow the use of system layout
+
+
 
 * Installation & Setup
 
 To install add the following to your Gemfile:
 
-  gem 'tolk'
+  gem 'tolk', :git=>'git@github.com:jujudellago/tolk.git'
 
 To setup just run:
 
