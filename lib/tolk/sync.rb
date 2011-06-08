@@ -22,6 +22,7 @@ module Tolk
 
       def flat_hash(data, prefix = '', result = {})
         data.each do |key, value|
+          logger.debug("flat_hash key=#{key} value=#{value}")
           current_prefix = prefix.present? ? "#{prefix}.#{key}" : key
 
           if !value.is_a?(Hash) || Tolk::Locale.pluralization_data?(value)
